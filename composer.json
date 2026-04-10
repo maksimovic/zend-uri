@@ -1,31 +1,37 @@
 {
-    "name": "zf1s/zend-uri",
+    "name": "maksimovic/zend-uri",
     "description": "Zend Framework 1 Uri package",
     "keywords": ["framework", "zf1", "zend", "uri"],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=8.1",
         "ext-ctype": "*",
-        "zf1s/zend-exception": "^1.15.6",
-        "zf1s/zend-loader": "^1.15.6",
-        "zf1s/zend-validate": "^1.15.6"
+        "maksimovic/zend-exception": "^2.0.1",
+        "maksimovic/zend-loader": "^2.0",
+        "maksimovic/zend-validate": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^2.1"
     },
     "autoload": {
         "psr-0": {
             "Zend_Uri": "library/"
         }
     },
-    "suggest": {
-        "zf1s/zend-config": "Used in special situations or with special adapters",
-        "zf1s/zend-filter": "Used in special situations or with special adapters"
-    },
     "replace": {
-        "zf1/zend-uri": "^1.12"
+        "zf1/zend-uri": "^1.12",
+        "zf1s/zend-uri": "^1.12"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text",
+        "phpstan": "phpstan analyse --memory-limit=256M"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.x-dev"
+            "dev-master": "2.x-dev"
         }
     }
 }
