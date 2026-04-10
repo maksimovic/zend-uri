@@ -1,7 +1,12 @@
 {
-    "name": "zf1s/zend-uri",
+    "name": "maksimovic/zend-uri",
     "description": "Zend Framework 1 Uri package",
-    "keywords": ["framework", "zf1", "zend", "uri"],
+    "keywords": [
+        "framework",
+        "zf1",
+        "zend",
+        "uri"
+    ],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
