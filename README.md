@@ -1,21 +1,17 @@
-# zend-uri (Zend Framework 1)
+# maksimovic/zend-uri
 
-This package is a part of the Zend Framework 1. Each component was separated and put into its own composer package.
-**PHP 5.3-8.3** compatible.
+A PHP 8.1+ compatible fork of [zf1s/zend-uri](https://github.com/zf1s/zend-uri), originally from [Zend Framework 1](https://github.com/zendframework/zf1).
 
-- [Report issues](https://github.com/zf1s/zf1/issues) and
-  [send Pull Requests](https://github.com/zf1s/zf1/pulls)
-  in the [main repository](https://github.com/zf1s/zf1)
-- This package can also be found at [Packagist](http://packagist.org/packages/zf1s).
+URI manipulation and validation, with support for HTTP and HTTPS URI schemes.
 
 ## Installation
 
-```
-composer require zf1s/zend-uri
+```bash
+composer require maksimovic/zend-uri
 ```
 
-## Resources
+This package replaces `zf1/zend-uri` and `zf1s/zend-uri`.
 
-- [Main Repository](https://github.com/zf1s/zf1)
-- [Original documentation](https://framework.zend.com/manual/1.12/en/manual.html) 
-- [Changelog](https://github.com/zf1s/zf1/blob/master/CHANGELOG.md)
+## License
+
+BSD-3-Clause
