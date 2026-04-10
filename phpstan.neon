@@ -1,0 +1,7 @@
+parameters:
+    level: 0
+    paths:
+        - library
+    ignoreErrors:
+        - identifier: class.notFound
+          message: '#Class Zend_Config not found#'
