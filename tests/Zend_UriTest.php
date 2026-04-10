@@ -66,8 +66,8 @@ class Zend_UriTest extends TestCase
 
     public function testSchemeMailto(): void
     {
-        $this->markTestIncomplete('Zend_Uri_Mailto is not implemented yet');
-        $this->_testValidUri('mailto');
+        $this->_testInvalidUri('mailto', '/not supported/i');
+        $this->_testInvalidUri('mailto:user@example.com', '/not supported/i');
     }
 
     /**
